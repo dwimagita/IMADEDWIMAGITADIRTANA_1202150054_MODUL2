@@ -12,17 +12,19 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-   //menginisiasi radiogroup
     private RadioGroup radioGroup1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         radioGroup1 = (RadioGroup) findViewById(R.id.pilihmenu);
+        Toast.makeText(this,"I Made Dwima Gita Dirtana_1202150054",Toast.LENGTH_LONG).show();
     }
-    //membuat setiap radio button agar menuju ke activity yang sesuai
+
     public void goTo(View view){
         int go = radioGroup1.getCheckedRadioButtonId();
         switch (go){
